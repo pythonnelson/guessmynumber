@@ -7,7 +7,6 @@ let highscore = 0;
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
 
-  //   console.log(typeof guess);
   if (!guess) {
     document.querySelector('.message').textContent = '❌ NO NUMBER DETECTED';
   } else if (guess === secretNumber) {
